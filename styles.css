@@ -1,1 +1,74 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #e6f7ff;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.game-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #8fcf87;
+    border: 2px solid #333;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.player, .creature, .resource, .obstacle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.player {
+    background-color: blue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.creature {
+    background-color: red;
+    top: 30%;
+    left: 30%;
+    transition: all 0.5s ease;
+}
+
+.resource {
+    background-color: yellow;
+    top: 70%;
+    left: 70%;
+}
+
+.obstacle {
+    background-color: #654321;
+    width: 40px;
+    height: 40px;
+}
+
+#collect-button {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
