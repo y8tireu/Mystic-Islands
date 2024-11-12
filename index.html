@@ -1,1 +1,26 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystic Islands</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-info">
+        <p>Health: <span id="health">100</span></p>
+        <p>Energy: <span id="energy">100</span></p>
+        <p>Resources: <span id="resources">0</span></p>
+    </div>
+    <div class="game-container">
+        <div id="player" class="player"></div>
+        <div id="creature" class="creature"></div>
+        <div id="resource" class="resource"></div>
+        <div class="obstacle" style="top: 100px; left: 200px;"></div>
+        <div class="obstacle" style="top: 300px; left: 100px;"></div>
+    </div>
+    <button id="collect-button" onclick="collectResource()">Collect Resource</button>
+    <script src="script.js"></script>
+</body>
+</html>
